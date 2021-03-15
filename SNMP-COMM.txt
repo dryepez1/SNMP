@@ -1,0 +1,13 @@
+SNMP-COMANDOS
+snmp-server community(name) snmp-cisco (RO-RW)
+if
+snmp-server community snmp-cisco ro
+or
+snmp-server community snmp-cisco-rw rw
+logging on
+logging (ip server)
+logging trap debugging
+
+PC
+MIB-BROWSER
+add ip: (ip router or switch) RC: snmp-cisco WR:snmp-cisco-rw v3
